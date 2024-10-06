@@ -1,27 +1,17 @@
-# UserManagement
+# Aplicación Web de Usuarios
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+# Descripción
+Esta aplicación web permite el despliegue de información de usuarios obtenida a través de un API. Utilizando el endpoint [https://jsonplaceholder.typicode.com/users](https://jsonplaceholder.typicode.com/users), la aplicación presenta los datos de usuarios de diferentes maneras, proporcionando una interfaz intuitiva y responsiva. 
 
-## Development server
+## Funcionalidades
+- **Visualización de Usuarios en Tabla**: La aplicación presenta una tabla interactiva que permite filtrar y buscar usuarios de manera eficiente. Los datos pueden ser filtrados por nombre, correo electrónico, teléfono o ciudad, facilitando así la navegación y el acceso a la información deseada.
+- **Otras Formas de Despliegue**: Además de la visualización en tabla, se ha implementado un diseño alternativo mediante tarjetas, donde cada tarjeta representa a un usuario. Este método proporciona una vista más visual y atractiva de la información, permitiendo al usuario obtener un resumen rápido de cada perfil.
+  
+## Diseño Responsivo
+La aplicación ha sido diseñada con técnicas de diseño responsivo para garantizar una experiencia de usuario óptima en dispositivos de diferentes tamaños.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Estado del Proyecto
+El código de la aplicación ha sido subido a producción y está disponible en el siguiente enlace:
+[https://user-management-zeta-seven.vercel.app/](https://user-management-zeta-seven.vercel.app/)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

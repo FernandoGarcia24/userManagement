@@ -1,0 +1,53 @@
+<div class="container mx-auto mt-5 px-4 pb-10">
+  <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+    <input
+      type="text"
+      placeholder="Buscar por nombre, correo, teléfono o ciudad"
+      [(ngModel)]="searchTerm"
+      (input)="onSearch()"
+      class="w-full md:w-3/4 lg:w-4/5 p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400"
+    />
+
+    <div class="mt-4 md:mt-0 md:ml-2 flex gap-2">
+      <button
+        class="transition ease-in-out duration-200 p-3 rounded-lg shadow-sm bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400"
+        (click)="changeViewMode('table')"
+      >
+        <i class="fas fa-table"></i> Tabla
+      </button>
+      <button
+        class="transition ease-in-out duration-200 p-3 rounded-lg shadow-sm bg-green-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400"
+        (click)="changeViewMode('cards')"
+      >
+        <i class="fas fa-th-large"></i> Tarjetas
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="viewMode === 'table'">
+    <table class="min-w-full border-collapse bg-white shadow-md rounded-lg overflow-hidden">
+      <thead class="bg-gray-50">
+        <tr>
+          <th class="border-b p-4 text-left text-sm font-semibold text-gray-600">ID</th>
+          <th class="border-b p-4 text-left text-sm font-semibold text-gray-600">Nombre</th>
+          <th class="border-b p-4 text-left text-sm font-semibold text-gray-600">Correo</th>
+          <th class="border-b p-4 text-left text-sm font-semibold text-gray-600">Teléfono</th>
+          <th class="border-b p-4 text-left text-sm font-semibold text-gray-600">Ciudad</th>
+        </tr>
+      </thead>
+      <tbody class="divide-y divide-gray-200">
+        <tr *ngFor="let user of filteredUsers" class="hover:bg-gray-100 transition">
+          <td class="p-4">{{ user.id }}</td>
+          <td class="p-4">{{ user.name }}</td>
+          <td class="p-4">{{ user.email }}</td>
+          <td class="p-4">{{ user.phone }}</td>
+          <td class="p-4">{{ user.address.city }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="viewMode === 'cards'" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <app-user-card *ngFor="let user of filteredUsers" [user]="user"></app-user-card>
+  </div>
+</div>

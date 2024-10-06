@@ -1,0 +1,33 @@
+<div class="bg-white border border-gray-200 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 my-2">
+  <div class="flex items-center mb-4">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVR4nO2VsQ3CMBBFX5WCClbIEBRkgezACqwRAgsxQXrECDGYAmraBCF9pAglSuw4EkW+dJJ1Pt+zzvYZZjkqBa5A7WlGOTplRiSvG5BOfYN8Vfet7wqIgCNwByyQyxcMcGgpxT4kwMq/ARKN7RSApAG4hQTkLSXKQgIiQax2noU+5KFyBqyAHXACSuAlK+X7zC19AWvgOeDlPhTrDLhoXABbIAYWsli+QjFnH0Dl0H8qH4Brk/uPW2SmbtfpSIjp+3Bm8as3UlzCdvWjYKMAAAAASUVORK5CYII="
+      alt="User Avatar"
+      class="w-6 h-6 rounded-full mr-4"
+    />
+    <h3 class="font-semibold text-gray-800">{{ user.name }}</h3>
+  </div>
+  <div class="text-gray-600">
+    <p class="flex items-center">
+      <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABHUlEQVR4nO2VMWoCURCGP9MYTOUB9AbWCgEFsfEANh4gba5gaeMB7OzMHQIeI1poo4WViF0IcRXhXxiWKPvWh1F4Hwz7dt7M7D9vh10IBAJ3xuFGdv8CfnWdArUrTrSmGrZmKgFV4EvrPTAEXhwe/Az0zUPnQN1FwLkiDdy6jsUXtOckICbtaZzr2pJJwF/FF4nTuNS1FwEnnoBRYlAHMjtgI8XiU0AJmGgvAj7VaRy/ly/S/UQ5XgR0ga38K6Al/yswk53WaG+l2K1yMwsoAmPj+5DPkpdZioqN88YmL7WAJrDUege84U4H2KjGGmi7CIjMuyyTnXJidlIL+AF6F6bZhRzwDny7CKjgn8q13wEfPM7v+PBfAgKBALfmCJhT9f2Vozd9AAAAAElFTkSuQmCC"
+      alt="Email"
+      class="w-6 h-6 rounded-full mr-4"
+    />
+      <span>{{ user.email }}</span>
+    </p>
+    <p class="flex items-center mt-2">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA10lEQVR4nO3VMQrCQBCF4d9a0MaAjSCeQjyLirfQ3hNoLx7BGLyE2KiNjSfQQjA2WhgJzMISNmjMpMuDrZKdD7IzGyiTMZFjzVHM0wGsNYGrA9hrAjsHcNMElinnUNcCRo7iB6CqBXjAyyp+Apoox5fiZwHV0xXgAbQpKBtB/KKADhAKMi4K6QvwBgYp78TdVcuDTC1kknjmSQubYYwnPgBmWYCKhZh7qSXFjylDGa+/PtddNofSwpEmYA4++FI4F2DSA1aJiVcFTBrAEFgAW+Bi/U/K8HM+TZ5lrQXJuV0AAAAASUVORK5CYII="
+      alt="Photo"
+      class="w-6 h-6 rounded-full mr-4"
+    />
+      <span>{{ user.phone }}</span>
+    </p>
+    <p class="flex items-center mt-2">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABQElEQVR4nK2VO0oEQRRFj4kGjm5AENFVKCg94z7ERQgi4wYEUxkUMREMRWwTP2OqG/AXiMZ+QESdRGkpfMJYPF9V9fSFmzTn3dvVXV0NYc0CG8A18Ca+AtaBBj1oAjgFioDbwHhq+BTwFBH+60dgMjZ8DHhICC/Ez7LqoNrK8D6QAYPiOpAr3GEoPFOGlgy+qfAzVkFLufOQ/JWsWfClB2fB+J+t2j1zYcGvHlyLKBjyZl4suFNBQceC7z24XuIR3VnwngfnEQUH3syuBc8r265p8MsKP2cVDAMfylAuj6Imbih37vwu78TUVoljohBvEqGRf1ZRBOx2zyiRWi1RsEKC3IF2kxB+G/nN/JE73z8jwr+AaUpqMaJggR7UB+wY4dtUoH7gSAl3/+uBKgqc3Ad43hV+JtcqlQs8Bk5Swr8BRSLg2F+Y4eMAAAAASUVORK5CYII="
+      alt="location"
+      class="w-6 h-6 rounded-full mr-4"
+    />
+      <span>{{ user.address.city }}</span>
+    </p>
+  </div>
+</div>
